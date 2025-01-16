@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tidy-surge-447814-v0",
+  "private_key_id": "cc51618cbd48a28d53b532bfe9b6f01665a05555",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrTAT/jFyrSq40\ntaTBwwUyElGMgUgs4Ty3Tray2XJrmyGgkAM79i0Kts4RNz/Kcs081385cbYUa45H\ntiVnDKLAACrVKZgF48miDDQNb1N9yQcFPo6ZWbVqMQVTi24A2mOQj0EkFFFg68DM\nMuE9f3Oy7DJ0hCES1K91nQxNZ4YzkApKSja2fpCGdYpna0olYXVwM56E2Blcfeou\n2JQLJcMUPhILC45Lj2SW+l+UANw8n/glKOV6L/ocpSMgubLwYA7UH6DT67gLWNRw\ndmTVYJ1LLfMyEnsUkBKjJdpmdFogf3z5vTpAkWv+Bci4umJi4Y1FAq+ke6kE3Gyc\nE4ABnYCFAgMBAAECggEACQh+GKF23Uycq4FdteKazHVPlClScAalohPvh6Y5clAe\nVl+xABhPWl3yQ07vsAIARxmu1LG838PRTod7oB0oEl7vRge2wmMgVoxJY0qm1ell\nz5m7N7/t6wm+vppXusinkeEuCwiMpz/lwvEhHI9MDc5rkXWRH3vy0H0a/829pTUL\nldmlpD5uNtCQ34MYorpffDLUKzQeRKnAtFRNzz/jnFrcjj47BReO/QPZ69Vbmxvj\n1FiUZwrUE2jGb/3zr++Sp7fKYQSDkNlaCUG7C5Sr96TyaegTk+fcpSbHDc/AMvQ7\nlSnVx3LbdDT5RSvWBtp6nrUHAAWiDgttc1mW4Y0C8QKBgQD8mSIYd0ANIb2ty9iR\nUw+ArzLMsBsdsjVgNoVtJMrTMoVjoIpRqEuqmbpchxlZWA+YKDW4RMTiykh9AyIQ\nd3BkTJNJea5k53MVTc9ti3orzxOKN1j2zejNwaFaw6efIxTXPv+P+llCrvIeiGPQ\nB6Vd7v+2S6drHcYLSIw2mqIuKwKBgQDudzztNxjR0Rpi6H+UAaHosHzqc2/pRVit\n+xI42mEobeIaKEnBy0tzhU31PqGQruRS8LLLkXo9WgIbqL69JFtBmMzXERfSZBv9\njBZzsh6nlT5sWh18i34bQ6mDpV0CWIoiiPF2DFx+34RAjw41Sa7Owea3tsfSFO1T\nNLHLUjxkDwKBgQDr+n9gzd8XpYLXH022Dhu4g3P4xzi92GOG+8hQe4PEJDl7Jlqy\nCICP40e38zpaPitrYX02JYCtwn5P06J6Marc+LDMfpHOkG7x4xw6YYgD71N411YU\nU67+sbr02T36LELnB2Km9iF3a4qjvZVJnir+Ay3+9tRz/H+swNzEkleauwKBgQDK\naROiFn5Oujq3cbm4m5oetI+TQeDgFCitpMtWzqZhdsPQiBnzEOg+agw9+qeQ86KC\ndCSPfjBQGzJm39jnGxEKoPReKPgbcTYBBQOZuLskbB3MQsF8kbq80bX1NEu6TgUS\nQ0MRfHSWjIrpcYQR3zUt8pAvqEn8HB9F3Rh9CJSSKQKBgHx5sCBAPCxvkkIa28Cj\nhLIH1QlAiTH5Gcz14YPveFwuC1/TX5Qj2P7b4gg62vcgLgpOFck9LTVM3UbBhKp+\n7NRDcToEAXRz8V6Tmydv4I9K0T+CIhxDFVzufcURi3oqyiu9JwpYYlHyDLh3Xcsf\nIJPcrHbQNKSYRH9X+KJJEupd\n-----END PRIVATE KEY-----\n",
+  "client_email": "visionapiservice@tidy-surge-447814-v0.iam.gserviceaccount.com",
+  "client_id": "111391717248578106243",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visionapiservice%40tidy-surge-447814-v0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
