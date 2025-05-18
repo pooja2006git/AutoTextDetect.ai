@@ -1,0 +1,85 @@
+[
+    {
+        "Feedback": "The design is sleek and user-friendly. Some sections take longer to load. Overall, the experience is decent, but it could be better with minor adjustments.",
+        
+    },
+    {
+        "Feedback": "The job filters are intuitive and easy to use. Some job postings don’t include enough details. It gets the job done but lacks depth in job descriptions.",
+        
+    },
+    {
+        "Feedback": "The application process is seamless and straightforward. It’s difficult to save a draft application. The process is fine but could use more save features.",
+        
+    },
+    {
+        "Feedback": "The site has a modern look that aligns with current design trends. The homepage feels cluttered at times. Visuals are appealing, but simplifying them would help.",
+        
+    },
+    {
+        "Feedback": "Excellent mobile responsiveness—works well on all devices. Some buttons are too small for mobile use. Good mobile site, with slight improvements needed for accessibility.",
+        
+    },
+    {
+        "Feedback": "The career tips section is a great addition for job seekers. It's hard to find on the main page. Helpful once found, but navigation could be more intuitive.",
+        
+    },
+    {
+        "Feedback": "The FAQs page answers most questions effectively. The formatting could be more engaging. It serves its purpose but could look better.",
+        
+    },
+    {
+        "Feedback": "The site’s search functionality is fast and accurate. It struggles with certain keywords. It’s functional but could be more optimized.",
+        
+    },
+    {
+        "Feedback": "The site uses professional and appealing colors. Sometimes, the text contrasts poorly with the background. It’s visually pleasing but could use better contrast.",
+        
+    },
+    {
+        "Feedback": "I love the integration with social media platforms for easy application sharing. It lacks options for certain niche platforms. The core integration is solid.",
+        
+    },
+    {
+        "Feedback": "The registration process is simple and quick. There’s no option to register using LinkedIn. It works well, but adding more options would enhance it.",
+        
+    },
+    {
+        "Feedback": "The career blog posts are informative and relevant. The page takes too long to load at times. It’s valuable content, hindered by load speed.",
+        
+    },
+    {
+        "Feedback": "The job alerts feature is highly beneficial. There’s no way to customize the frequency. It’s effective but could use more customization.",
+        
+    },
+    {
+        "Feedback": "Navigation between different sections is smooth. Some sub-sections are difficult to locate. Overall, it’s well-structured but could be more intuitive.",
+        "Sentiments": {
+            "navigation": "positive",
+            "sub-section access": "negative",
+            "structure": "neutral"
+        }
+    },
+    {
+        "Feedback": "The visual animations are engaging without being overwhelming. They sometimes cause lag on older devices. They look good but should be optimized.",
+        "Sentiments": {
+            "animations": "positive",
+            "device performance": "negative",
+            "overall design impact": "neutral"
+        }
+    },
+    {
+        "Feedback": "The language options cater to a broad audience. Some translations are inconsistent. It’s inclusive, but some fixes are needed.",
+        "Sentiments": {
+            "language variety": "positive",
+            "translation quality": "negative",
+            "inclusivity": "neutral"
+        }
+    },
+    {
+        "Feedback": "The personalized job recommendations are spot on. It takes a while to refresh after new preferences. The personalization is strong but could be quicker.",
+        "Sentiments": {
+            "job recommendations": "positive",
+            "refresh speed": "negative",
+            "overall personalization": "neutral"
+        }
+    }]

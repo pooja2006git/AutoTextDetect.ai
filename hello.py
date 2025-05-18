@@ -1,23 +1,12 @@
 from google.cloud import vision
 import io
 import os
-import tkinter as tk
-from tkinter import filedialog
+import re
 
 # Set up Google Cloud credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'VisionToken.json'
-
-def select_image():
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    file_path = filedialog.askopenfilename(title="Select an Image", filetypes=[("Image Files", "*.jpg;*.jpeg;*.png")])
-    return file_path
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] =  r'VisionToken.json'
 
 def detect_text_with_alignment(image_path):
-    if not image_path:
-        print("No image selected.")
-        return
-    
     # Initialize the Vision API client
     client = vision.ImageAnnotatorClient()
 
@@ -53,13 +42,15 @@ def detect_text_with_alignment(image_path):
     for word in words:
         added_to_line = False
         for line in lines:
-            if abs(word["bounding_box"]["y_min"] - line["y_min"]) < 5:  # Threshold for line grouping
+            # Check if the word belongs to the current line
+            if abs(word["bounding_box"]["y_min"] - line["y_min"]) < 15:  # Threshold for line grouping
                 line["words"].append(word)
                 line["y_min"] = min(line["y_min"], word["bounding_box"]["y_min"])
                 line["y_max"] = max(line["y_max"], word["bounding_box"]["y_max"])
                 added_to_line = True
                 break
         if not added_to_line:
+            # Create a new line if the word doesn't fit into existing lines
             lines.append({
                 "words": [word],
                 "y_min": word["bounding_box"]["y_min"],
@@ -69,19 +60,47 @@ def detect_text_with_alignment(image_path):
     # Sort lines by their vertical position (y_min)
     lines.sort(key=lambda line: line["y_min"])
 
-    # Construct the text line by line
-    print("Reconstructed Text with Proper Alignment:")
+    # Reconstruct the text line by line
+    reconstructed_text = []
     for line in lines:
+        # Sort words in the line by their horizontal position (x_min)
         sorted_words = sorted(line["words"], key=lambda word: word["bounding_box"]["x_min"])
         line_text = " ".join(word["text"] for word in sorted_words)
-        print(line_text)
+        reconstructed_text.append(line_text)
+
+    # Print the reconstructed text
+    print("Reconstructed Text with Proper Alignment:")
+    for line in reconstructed_text:
+        print(line)
+
+    # Apply regex to extract question numbers and answers
+    pair_questions_answers(reconstructed_text)
 
     # Handle errors
     if response.error.message:
         raise Exception(f"API Error: {response.error.message}")
 
-# Open dialog to select image
-image_path = select_image()
+def pair_questions_answers(text_lines):
+    # Regex pattern to match question numbers and answers
+    # Matches patterns like 1 DOG, 2 ) CAT, 3 ) NALK, etc.
+    pattern = re.compile(r"(\d+)\s*[).]?\s*(\w+)")
 
-# Perform OCR with improved alignment
+    # Pair questions and answers
+    paired_data = []
+    for line in text_lines:
+        match = pattern.search(line)
+        if match:
+            question = match.group(1)  # The question number (e.g., 1, 2, etc.)
+            answer = match.group(2)   # The answer (e.g., DOG, CAT, etc.)
+            paired_data.append({"question": question, "answer": answer})
+
+    # Print the paired questions and answers
+    print("\nPaired Questions and Answers:")
+    for pair in paired_data:
+        print(f"{pair['question']}: {pair['answer']}")
+
+# Input image path
+image_path = "img4.jpeg"
+
+# Perform OCR with improved alignment and pairing
 detect_text_with_alignment(image_path)
